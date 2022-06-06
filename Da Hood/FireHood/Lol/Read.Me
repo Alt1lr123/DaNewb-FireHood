@@ -27,7 +27,7 @@ end)
 local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua"),true))()
 notifications:notify{
     Title = "Welcome",
-    Description = "Welcome To FireHood",
+    Description = "Welcome To FirHood",
     Accept = {
         Text = "Ok !"
     },
@@ -768,6 +768,76 @@ Tab2Section:NewButton("Bat", "Tp", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(380.932, 44.318, -284.746)
 end)
 
+Tab2Section:NewButton("Gas Station", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(591.6807250976562, 48.9980583190918, -256.81829833984375)
+end)
+
+Tab2Section:NewButton("Unknow Base", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-117.2702865600586, -58.702049255371094, 146.5360870361328)
+end)
+
+Tab2Section:NewButton("All Gun [1]", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-797.5016479492188, -39.651187896728516, -908.5286254882812)
+end)
+
+Tab2Section:NewButton("All Gun [2]", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-872.4907836914062, -38.401187896728516, -549.1875610351562)
+end)
+
+Tab2Section:NewButton("Admin Base Entrance", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-438.9405212402344, 7.3987932205200195, -884.9732055664062)
+end)
+
+Tab2Section:NewButton("Meeting Room {Admin Base}", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1013.4916381835938, -51.15618896484375, -1014.1583862304688)
+end)
+
+Tab2Section:NewButton("Furniture", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-490.1666564941406, 21.74802017211914, -125.82877349853516)
+end)
+
+Tab2Section:NewButton("Trailor", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-951.6024780273438, -4.776987552642822, 450.8782653808594)
+end)
+
+Tab2Section:NewButton("Key", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-271.0005798339844, 21.74802017211914, -246.9978790283203)
+end)
+
+Tab2Section:NewButton("Taco", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(546.946533203125, 51.05942153930664, -493.3235168457031)
+end)
+
+Tab2Section:NewButton("Park", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(360.9668884277344, 48.49801254272461, -522.9868774414062)
+end)
+
+Tab2Section:NewButton("Skate Park", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-825.6868286132812, 21.99785041809082, -549.29345703125)
+end)
+
+Tab2Section:NewButton("Circus", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(142.00022888183594, 24.753023147583008, -988.0001220703125)
+end)
+
+Tab2Section:NewButton("Casino", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-879.2764282226562, 21.25301742553711, -190.19729614257812)
+end)
+
+Tab2Section:NewButton("Theate", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1004.6754150390625, 24.52411460876465, -159.90626525878906)
+end)
+
+Tab2Section:NewButton("High Scool", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-652, 21.748016357421875, 255)
+end)
+
+local Tab2Section = Tab2:NewSection("Recomended Tp")
+
+Tab2Section:NewButton("Church", "Tp", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(205, 21.74802017211914, -82)
+end)
+
 local Tab3 = Window:NewTab("Other")
 local Tab3Section = Tab3:NewSection("Other")
 
@@ -1021,146 +1091,10 @@ Tab3Section:NewButton("Animation Pack", "Animation Packs", function()
         warn("loaded")
 end)
 
-local Tab5 = Window:NewTab("Marco")
-local Tab5Section = Tab5:NewSection("Mobile Marco")
+local Tab4 = Window:NewTab("Gun")
+local Tab4Section = Tab4:NewSection("Remove Your Gun Sound")
 
-Tab5Section:NewButton("Fake Speed Glitch", "Speed", function()
-game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = "Speed Tool"
-tool.Activated:connect(function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 110
-end)
-tool.Parent = game.Players.LocalPlayer.Backpack
-end)
-
-Tab5Section:NewButton("Fake Marco", "Do Animation", function()
-game.Players.LocalPlayer:GrtMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = False
-tool.Name = "Fake Marco"
-tool.Actuvated:connect(function()
-stopTracks()
-                loadAnimation("rbxassetid://3189779152")
-
-tool.Parent = game.Players.LocalPlayer.Backpack
-end)
-
-local Tab5Section = Tab5:NewSection("Marco Pc")
-
-Tab5Section:NewButton("Speed Glitch [X]", "Speed", function()
---Settings
-local sped = 110 -- Speed
-local keybind = "q"
-
-
-
-
---The Script
-
-yes = false
-	plr = game.Players.LocalPlayer
-	mouse = plr:GetMouse()
-	mouse.KeyDown:connect(function(key)
-		if key == keybind and yes == false then
-			yes = true
-			game.Players.LocalPlayer.Character.Humanoid.Name = "Humz"
-			game.Players.LocalPlayer.Character.Humz.WalkSpeed = sped
-			game.Players.LocalPlayer.Character.Humz.JumpPower = 50
-		elseif key == keybind and yes == true then
-			yes = false
-			game.Players.LocalPlayer.Character.Humz.WalkSpeed = 16
-			game.Players.LocalPlayer.Character.Humz.JumpPower = 50
-			game.Players.LocalPlayer.Character.Humz.Name = "Humanoid"
-		end
-	end)
-end)
-
-Tab5Section:NewButton("Fake Marco Animation", "Fake Marco", function()
-_G.Key = "x"
-local plr = game:GetService("Players").LocalPlayer
-local Mouse = plr:GetMouse()
-local On_Check = false
-local Item = plr.Backpack.Wallet
-local UAnimation = Instance.new("Animation")
-
-function stopTracks()
-	for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
-		if (v.Animation.AnimationId:match("rbxassetid")) then
-			v:Stop()
-		end
-	end
-end
-
-function loadAnimation(id)
-	if UAnimation.AnimationId == id then
-		stopTracks()
-		UAnimation.AnimationId = "1"
-	else
-		UAnimation.AnimationId = id
-		local animationTrack = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(UAnimation)
-		animationTrack:Play()
-	end
-end
-
-Mouse.KeyDown:Connect(function(Key)
-	if Key == _G.Key then
-		On_Check = not On_Check
-		if On_Check == true then
-			stopTracks()
-			loadAnimation("rbxassetid://3189777795")
-			wait(1.5)
-			Item.Parent = plr.Character
-			wait(0.15)
-			plr.Character.Wallet.Parent = plr.Backpack
-			wait(0.05)
-			repeat game:GetService("RunService").Heartbeat:wait()
-				keypress(0x49)
-				game:GetService("RunService").Heartbeat:wait()
-				keypress(0x4F)
-				game:GetService("RunService").Heartbeat:wait()
-				keyrelease(0x49)
-				game:GetService("RunService").Heartbeat:wait()
-				keyrelease(0x4F)
-				game:GetService("RunService").Heartbeat:wait()
-				keypress(0x49)
-				game:GetService("RunService").Heartbeat:wait()
-				keypress(0x4F)
-				game:GetService("RunService").Heartbeat:wait()
-				keyrelease(0x49)
-				game:GetService("RunService").Heartbeat:wait()
-				keyrelease(0x4F)
-				game:GetService("RunService").Heartbeat:wait()
-			until On_Check == false
-		end
-	end
-end)
-end)
-
-
-local Tab5Section = Tab5:NewSection("Press This When Fake Speed Glitch")
-
-Tab5Section:NewToggle("Auto Shift", "Auto Shift So Its Look Real", function(state)
-    if state then
-while true do
-wait(0.2)
-local vim = game:service("VirtualInputManager")
-           vim:SendKeyEvent(true, "Shift", false, game)
-       end
-    else
-while false do
-wait(0.1)
-local vim = game:service("VirtualInputManager")
-           vim:SendKeyEvent(true, "Shift", false, game)
-       end
-    end
-end)
-
-local Tab14 = Window:NewTab14("TabName")
-local 14Section = 14:NewSection("Remove Your Gun Sound")
-
-14Section:NewButton("SMG", "Silent Gun", function()
+Tab4Section:NewButton("SMG", " ", function()
 wait()
 		repeat wait() until plr.Character:FindFirstChild('[SMG]')
 		local SMG = plr.Character:FindFirstChild('[SMG]')
@@ -1168,7 +1102,7 @@ wait()
 		SMG.Handle.ShootSound.Volume = 0
 end)
 
-14Section:NewButton("AR", "Silent Gun", function()
+Tab4Section:NewButton("AR", "Silent Gun", function()
 wait()
 		repeat wait() until plr.Character:FindFirstChild('[AR]')
 		local SMG = plr.Character:FindFirstChild('[AR]')
@@ -1176,7 +1110,7 @@ wait()
 		SMG.Handle.ShootSound.Volume = 0
 end)
 
-14Section:NewButton("Shotgun", "Silent Gun", function()
+Tab4Section:NewButton("Shotgun", "Silent Gun", function()
 wait()
 		repeat wait() until plr.Character:FindFirstChild('[Shotgun]')
 		local SMG = plr.Character:FindFirstChild('[Shotgun]')
@@ -1184,7 +1118,7 @@ wait()
 		SMG.Handle.ShootSound.Volume = 0
 end)
 
-14Section:NewButton("Silencer", "Silent Gun", function()
+Tab4Section:NewButton("Silencer", "Silent Gun", function()
 wait()
 		repeat wait() until plr.Character:FindFirstChild('[Silencer]')
 		local SMG = plr.Character:FindFirstChild('[Silencer]')
@@ -1192,7 +1126,7 @@ wait()
 		SMG.Handle.ShootSound.Volume = 0
 end)
 
-14Section:NewButton("P90", "Silent Gun", function()
+Tab4Section:NewButton("P90", "Silent Gun", function()
 wait()
 		repeat wait() until plr.Character:FindFirstChild('[P90]')
 		local SMG = plr.Character:FindFirstChild('[P90]')
@@ -1200,7 +1134,7 @@ wait()
 		SMG.Handle.ShootSound.Volume = 0
 end)
 
-14Section:NewButton("Glock", "Silent Gun", function()
+Tab4Section:NewButton("Glock", "Silent Gun", function()
 wait()
 		repeat wait() until plr.Character:FindFirstChild('[Glock]')
 		local SMG = plr.Character:FindFirstChild('[Glock]')
@@ -1208,10 +1142,10 @@ wait()
 		SMG.Handle.ShootSound.Volume = 0
 end)
 
-local Tab15 = Window:NewTab("Stands")
-local 15Section = 15:NewSection("Stands")
+local Tab5 = Window:NewTab("Stands")
+local Tab5Section = Tab5:NewSection("Stands")
 
-15Section:NewButton("Bat Man", "Bat Man Stand", function()
+Tab5Section:NewButton("Bat Man", "Bat Man Stand", function()
 assert(getrawmetatable)
 grm = getrawmetatable(game)
 setreadonly(grm, false)
@@ -1408,7 +1342,7 @@ GrappleHook.Name = "GrappleHook"
 GrappleHook.RequiresHandle = false
 end)
 
-Tab15Section:NewButton("Venom", "Venom Stands", function()
+Tab5Section:NewButton("Venom", "Venom Stands", function()
 local OriginalKeyUpValue = 0;
 local Cooldown = false;
 
@@ -1525,7 +1459,7 @@ game:GetService('Players').LocalPlayer.CharacterAdded:Connect(function(v)
 end);
 end)
 
-Tab15Section:NewButton("Deadshot", "Deadshot", function()
+Tab5Section:NewButton("Deadshot", "Deadshot", function()
 pcall(function()
     local deadshot = false
     local MaskOn = Instance.new("Animation", game.ReplicatedStorage.ClientAnimations)
@@ -1671,7 +1605,7 @@ pcall(function()
     end)
 end)
 
-Tab15Section:NewButton("Hearing", "Hearing Stand", function()
+Tab5Section:NewButton("Hearing", "Hearing Stand", function()
 grm = getrawmetatable(game)
 setreadonly(grm, false)
 old = grm.__namecall
@@ -1881,7 +1815,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 end)
 end)
 
-Tab15Section:NewButton("Wolverine", "Wolverine Stand", function()
+Tab5Section:NewButton("Wolverine", "Wolverine Stand", function()
 local OriginalKeyUpValue = 0
 local LocalPlayer = game:GetService("Players").LocalPlayer
 
@@ -2063,10 +1997,10 @@ end
 end)
 end)
 
-local Tab16 = Window:NewTab("Auto Farm")
-local Tab16Section = Tab16:NewSection("Auto Farm Script")
+local Tab6 = Window:NewTab("Auto Farm")
+local Tab6Section = Tab6:NewSection("Auto Farm Script")
 
-Tab16Section:NewToggle("Fist Farm", "Auto Farm", function(state)
+Tab6Section:NewToggle("Fist Farm", "Auto Farm", function(state)
     if state then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/helloDaHood/main/DaHoodKidW'))()
     else
@@ -2074,7 +2008,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/Da-Hood/
     end
 end)
 
-Tab16Section:NewToggle("Letuce Farm", "Auto Farm", function(state)
+Tab6Section:NewToggle("Letuce Farm", "Auto Farm", function(state)
     if state then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/my-fault/main/beest4r'))()
     else
@@ -2082,7 +2016,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/legend-o
     end
 end)
 
-Tab16Section:NewToggle("Hostpital Farm", "Auto Farm", function(state)
+Tab6Section:NewToggle("Hostpital Farm", "Auto Farm", function(state)
     if state then
 loadstring(game:HttpGet('https://pastebin.com/raw/wGU2QCtp'))()
     else
@@ -2090,7 +2024,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/kiywMAGC'))()
     end
 end)
 
-Tab16Section:NewToggle("Money Farm", "Auto Farm", function(state)
+Tab6Section:NewToggle("Money Farm", "Auto Farm", function(state)
     if state then
 loadstring(game:HttpGet("https://pastebin.com/raw/Zx061kiT", true))()
     else
@@ -2098,45 +2032,45 @@ loadstring(game:HttpGet("https://pastebin.com/raw/Zx061kiT", false))()
     end
 end)
 
-local Tab17 = Window:NewTab("Animation")
-local Tab17Section = Tab17:NewSection("Animation Script")
+local Tab7 = Window:NewTab("Animation")
+local Tab7Section = Tab7:NewSection("Animation Script")
 
-Tab17Section:NewButton("Ninja", "Ninja Animation", function()
+Tab7Section:NewButton("Ninja", "Ninja Animation", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/3us2GAp7'))()
 end)
 
-Tab17Section:NewButton("Cartoony", "Cartoony Animation", function()
+Tab7Section:NewButton("Cartoony", "Cartoony Animation", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/amVNDcQT'))()
 end)
 
-Tab17Section:NewButton("Toy", "Toy Animation", function()
+Tab7Section:NewButton("Toy", "Toy Animation", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/zSNMgiuG'))()
 end)
 
-Tab17Section:NewButton("Bubble", "Bubble Animation", function()
+Tab7Section:NewButton("Bubble", "Bubble Animation", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/WgetAbi5'))()
 end)
 
-Tab17Section:NewButton("Levitaion", "Levitation Animation", function()
+Tab7Section:NewButton("Levitaion", "Levitation Animation", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/AryTwN4z'))()
 end)
 
-Tab17Section:NewButton("Vampire", "Vampire Animation", function()
+Tab7Section:NewButton("Vampire", "Vampire Animation", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/xbG6jw7H'))()
 end)
 
-Tab17Section:NewButton("Stylish", "Stylish Aniamtion", function()
+Tab7Section:NewButton("Stylish", "Stylish Aniamtion", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/xf5jBa86'))()
 end)
 
-Tab17Section:NewButton("Zombie", "Zombie Animation", function()
+Tab7Section:NewButton("Zombie", "Zombie Animation", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Exploit-blox/Ninja-Legends/main/ReleaseByBEEST'))()
 end)
 
-local Tab18 = Window:NewTab("Aimlock")
-local Tab18Section = Tab18NewSection("Aimlock [Q]")
+local Tab8 = Window:NewTab("Aimlock")
+local Tab8Section = Tab8:NewSection("Aimlock")
 
-Tab18Section:NewButton("Aimlock","Aimlock",function()
+Tab8Section:NewButton("Aimlock [Q]","Aimlock",function()
 	getgenv().AimPart = "HumanoidRootPart"
 	getgenv().AimlockKey = "q"
 	getgenv().AimRadius = 30
@@ -2316,43 +2250,43 @@ Tab18Section:NewButton("Aimlock","Aimlock",function()
 	end)
 end)
 
-Tab18Section:NewTextBox("Aimlock Key","Aimlock Key should be lowercase.",function(L_69_arg0)
+Tab8Section:NewTextBox("Aimlock Key","Aimlock Key should be lowercase.",function(L_69_arg0)
 	getgenv().AimlockKey = L_69_arg0
 end)
 
-Tab18Section:NewTextBox("Aimlock Prediction","Customize your aimlock prediction",function(L_70_arg0)
+Tab8Section:NewTextBox("Aimlock Prediction","Customize your aimlock prediction",function(L_70_arg0)
 	PredictionVelocity = L_70_arg0
 end)
 
-Tab18Section:NewDropdown("AimPart","AimPart",{"Head","UpperTorso","HumanoidRootPart","LowerTorso"},function(L_71_arg0)
+Tab8Section:NewDropdown("AimPart","AimPart",{"Head","UpperTorso","HumanoidRootPart","LowerTorso"},function(L_71_arg0)
 	getgenv().AimPart = L_71_arg0
 end)
 
-local Tab18Section = Tab18NewSection("Silent Aim [T]")
+local Tab8Section = Tab8:NewSection("Silent Aim [T]")
 
-Tab18Section:NewButton("Silent Aim","Silent Aim Toggle Key is T.",function()
+Tab8Section:NewButton("Silent Aim","Silent Aim Toggle Key is T.",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/tayodevelup/imsoniac/main/silentaim", true))()
 end)
 
-Tab18Section:NewTextBox("Silent Aim Prediction","0.157 for low ping 0.178 high ping",function(L_72_arg0)
+Tab8Section:NewTextBox("Silent Aim Prediction","0.157 for low ping 0.178 high ping",function(L_72_arg0)
 	DaHoodSettings.Prediction = L_72_arg0
 end)
 
-Tab18Section:NewDropdown("Silent Aim Part","Choose Part",{"Head","UpperTorso","HumanoidRootPart","LowerTorso"},function(L_73_arg0)
+Tab8Section:NewDropdown("Silent Aim Part","Choose Part",{"Head","UpperTorso","HumanoidRootPart","LowerTorso"},function(L_73_arg0)
 	Aiming.TargetPart = L_73_arg0
 end)
 
-Tab18Section:NewTextBox("Silent Aim Size Fov","Silent Aim Size",function(L_74_arg0)
+Tab8Section:NewTextBox("Silent Aim Size Fov","Silent Aim Size",function(L_74_arg0)
 	Aiming.FOV = L_74_arg0
 end)
 
-Tab18Section:NewToggle("Silent Aim Show Fov","Show The Silent Aim Fov",function(L_75_arg0)
+Tab8Section:NewToggle("Silent Aim Show Fov","Show The Silent Aim Fov",function(L_75_arg0)
 	Aiming.ShowFOV = L_75_arg0
 end)
 
-local Tab18Section = Tab18:NewSection("Anti Lock [Z]")
+local Tab8Section = Tab8:NewSection("Anti Lock [Z]")
 
-Tab18Section:NewButton("Anti-Lock","Key is Z.",function()
+Tab8Section:NewButton("Anti-Lock","Key is Z.",function()
 	repeat
 		wait()
 	until game:IsLoaded()
@@ -2409,7 +2343,8 @@ Tab18Section:NewButton("Anti-Lock","Key is Z.",function()
 			return L_125_.CurrentWS
 		end
 		return L_128_(L_140_arg0, L_141_arg1)
-	end)
+	end
+        )
 	L_126_.__newindex =
             newcclosure(
             function(L_143_arg0, L_144_arg1, L_145_arg2)
@@ -2420,7 +2355,8 @@ Tab18Section:NewButton("Anti-Lock","Key is Z.",function()
 			end
 		end
 		return L_127_(L_143_arg0, L_144_arg1, L_145_arg2)
-	end)
+	end
+        )
 	setreadonly(L_126_, true)
 	repeat
 		wait()
@@ -2471,38 +2407,244 @@ Tab18Section:NewButton("Anti-Lock","Key is Z.",function()
 	end)
 end)
 
-local Tab18Section = Tab18:NewSection("Other Lock")
+local Tab8Section = Tab8:NewSection("Other Lock")
 
-Tab18Section:NewButton("Aim Lock {Old Arceus X Aimlock Tools}", "Arceus X AimLock", function()
+Tab8Section:NewButton("Aim Lock {Old Arceus X Aimlock Tools}", "Arceus X AimLock", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/HA8kAiYp'))()
 end)
 
-Tab18Section:NewButton("Aimbot", "", function()
+Tab8Section:NewButton("Aimbot", "", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
 end)
 
-Tab18Section:NewButton("Streamable [Q]", "Q", function()
+Tab8Section:NewButton("Streamable [Q]", "Q", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/XfdzBV2y'))()
 end)
 
-Tab18Section:NewButton("Aimbot [Q]", "Q", function()
+Tab8Section:NewButton("Aimbot [Q]", "Q", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/XzCsiJaD'))()
 end)
 
-Tab18Section:NewButton("Kloy Lock [Q]", "Q", function()
+Tab8Section:NewButton("Kloy Lock [Q]", "Q", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/BtQYq4EG'))()
 end)
 
-local Tab19 = Window:NewTab("Setting")
-local Tab19Section = Tab17:NewSection("Setting")
+local Tab8Section = Tab8:NewSection("FireHood Aimlock")
 
-Tab19Section:NewKeybind("Close/Open", "Close/Open", Enum.KeyCode.Shift, function()
-	Library:ToggleUI()
+Tab8Section:NewTextBox("FireHood Aimlock", "Aimlock", function(txt)
+-- Toggle
+getgenv().Target = true
+-- Configuration
+getgenv().Key = Enum.KeyCode.Q
+getgenv().Prediction = 0.135
+getgenv().ChatMode = false
+getgenv().NotifMode = true
+    getgenv().PartMode = true
+    getgenv().AirshotFunccc = true
+    getgenv().Partz = "txt"
+getgenv().AutoPrediction = true
+--
+    _G.Types = {
+        Ball = Enum.PartType.Ball,
+        Block = Enum.PartType.Block, 
+        Cylinder = Enum.PartType.Cylinder
+    }
+    
+    --variables                 
+        local Tracer = Instance.new("Part", game.Workspace)
+    Tracer.Name = "gay" 
+    Tracer.Anchored = true      
+    Tracer.CanCollide = false
+    Tracer.Transparency = 0.8
+    Tracer.Parent = game.Workspace  
+    Tracer.Shape = _G.Types.Block
+    Tracer.Size = Vector3.new(14,14,14)
+    Tracer.Color = Color3.fromRGB(128,128,128)
+    
+    --
+    local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+local Runserv = game:GetService("RunService")
+
+circle = Drawing.new("Circle")
+circle.Color = Color3.fromRGB(255,255,255)
+circle.Thickness = 0
+circle.NumSides = 732
+circle.Radius = 120
+circle.Thickness = 0
+circle.Transparency = 0.7
+circle.Visible = false
+circle.Filled = false
+
+Runserv.RenderStepped:Connect(function()
+    circle.Position = Vector2.new(mouse.X,mouse.Y+35)
+end)
+    
+        local guimain = Instance.new("Folder", game.CoreGui)
+        local CC = game:GetService"Workspace".CurrentCamera
+    local LocalMouse = game.Players.LocalPlayer:GetMouse()
+        local Locking = false
+    
+        
+    --
+    if getgenv().valiansh == true then
+                        game.StarterGui:SetCore("SendNotification", {
+                        Title    = "FireHood Aimlock",
+                        Text     = "loaded",
+                        Duration = 1
+        
+                   })
+        return
+    end
+    
+    getgenv().valiansh = true
+    
+        local UserInputService = game:GetService("UserInputService")
+
+    UserInputService.InputBegan:Connect(function(keygo,ok)
+           if (not ok) then
+           if (keygo.KeyCode == getgenv().Key) then
+               if getgenv().Target == true then
+               Locking = not Locking
+               
+               if Locking then
+               Plr =  getClosestPlayerToCursor()
+                if getgenv().ChatMode then
+        local A_1 = "Target: "..tostring(Plr.Character.Humanoid.DisplayName) local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+            end 
+               if getgenv().NotifMode then
+                game.StarterGui:SetCore("SendNotification", {
+        Title = "";
+        Text = "Target: "..tostring(Plr.Character.Humanoid.DisplayName);
+    
+    })
+    end
+    elseif not Locking then
+         if getgenv().ChatMode then
+        local A_1 = "Unlocked!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+            end 
+        if getgenv().NotifMode then
+                        game.StarterGui:SetCore("SendNotification", {
+                        Title    = "FireHood Lock",
+                        Text     = "unlocked",
+                        Duration = 1
+               })
+           elseif getgenv().Target == false then
+                        game.StarterGui:SetCore("SendNotification", {
+                        Title    = "FireHood Lock",
+                        Text     = "target isn't enabled",
+                        Duration = 1
+     
+                   })
+               
+               end
+                  
+ 
+ end     end   
+end
+end
+end)
+    
+    function getClosestPlayerToCursor()
+        local closestPlayer
+        local shortestDistance = circle.Radius
+
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("LowerTorso") then
+                local pos = CC:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+                local magnitude = (Vector2.new(pos.X, pos.Y) - Vector2.new(LocalMouse.X, LocalMouse.Y)).magnitude
+                if magnitude < shortestDistance then
+                    closestPlayer = v
+                    shortestDistance = magnitude
+                end
+            end
+        end
+        return closestPlayer
+    end
+--
+if getgenv().PartMode then
+    game:GetService"RunService".Stepped:connect(function()
+        if Locking and Plr.Character and Plr.Character:FindFirstChild("LowerTorso") then
+            Tracer.CFrame = CFrame.new(Plr.Character.LowerTorso.Position+(Plr.Character.LowerTorso.Velocity*Prediction))
+        else
+            Tracer.CFrame = CFrame.new(0, 9999, 0)
+
+        end
+    end)
+end
+
+    
+    
+    --
+    local rawmetatable = getrawmetatable(game)
+    local old = rawmetatable.__namecall
+    setreadonly(rawmetatable, false)
+    rawmetatable.__namecall = newcclosure(function(...)
+        local args = {...}
+        if Locking and getnamecallmethod() == "FireServer" and args[2] == "UpdateMousePos" then
+            args[3] = Plr.Character[getgenv().Partz].Position+(Plr.Character[getgenv().Partz].Velocity*Prediction)
+            return old(unpack(args))
+        end
+        return old(...)
+    end)
+
+
+if getgenv().AirshotFunccc == true then
+
+            if Plr.Character.Humanoid.Jump == true and Plr.Character.Humanoid.FloorMaterial == Enum.Material.Air then
+                getgenv().Partz = "RightFoot"
+            else
+                Plr.Character:WaitForChild("Humanoid").StateChanged:Connect(function(old,new)
+                    if new == Enum.HumanoidStateType.Freefall then
+                    getgenv().Partz = "RightFoot"
+                    else
+                        getgenv().Partz = "LowerTorso"
+                    end
+                end)
+            end
+end
+---
+    while wait() do
+    if getgenv().AutoPrediction == true then
+        local pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+        local split = string.split(pingvalue,'(')
+        local ping = tonumber(split[1])
+        if ping < 130 then
+            getgenv().Prediction = 0.151
+        elseif ping < 125 then
+            getgenv().Prediction = 0.149
+        elseif ping < 110 then
+            getgenv().Prediction = 0.146
+        elseif ping < 105 then
+            getgenv().Prediction = 0.138
+        elseif ping < 90 then
+            getgenv().Prediction = 0.136
+        elseif ping < 80 then
+            getgenv().Prediction = 0.134
+        elseif ping < 70 then
+            getgenv().Prediction = 0.131
+        elseif ping < 60 then
+            getgenv().Prediction = 0.1229
+        elseif ping < 50 then
+            getgenv().Prediction = 0.1225
+        elseif ping < 40 then
+            getgenv().Prediction = 0.1256
+        end
+    end
+    end
+    
 end)
 
-local Tab20 = Window:NewTab("Credits")
-local Tab20Section = Tab20:NewSection("FireHood/Da Newb")
-Tab20Section:NewLabel("Ui: Kavo Libary")
-Tab20Section:NewLabel("Fly Gui V3: me_ozoneYT And Quandle The Dinglish")
-Tab20Section:NewLabel("Owner: ALT1LR")
-Tab20Section:NewLabel("Discord: https://discord.gg/Pu4ESrztTC")
+
+local Tab8Section = Tab8:NewSection("Put This In Textbox")
+Tab8Section:NewLabel("Head")
+Tab8Section:NewLabel("UpperTurso")
+Tab8Section:NewLabel("LowerTurso")
+Tab8Section:NewLabel("HumanoidRootPart")
+
+local Tab9 = Window:NewTab("Credits")
+local Tab10Section = Tab9:NewSection("FireHood/Da Newb")
+Tab10Section:NewLabel("Ui: Kavo Libary")
+Tab10Section:NewLabel("Fly Gui V3: me_ozoneYT And Quandle The Dinglish")
+Tab10Section:NewLabel("Owner: ALT1LR")
+Tab10Section:NewLabel("Discord: alt1lr#9495")
